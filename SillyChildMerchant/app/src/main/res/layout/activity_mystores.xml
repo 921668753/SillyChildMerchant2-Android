@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <TextView style="@style/DividerWidth" />
+
+    <LinearLayout
+        style="@style/Match44"
+        android:background="@color/whiteColors"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_classification"
+            style="@style/AutoMatch"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen15"
+            android:paddingRight="@dimen/dimen13">
+
+            <TextView
+                android:id="@+id/tv_classification"
+                style="@style/WrapWrap"
+                android:maxWidth="@dimen/dimen38"
+                android:singleLine="true"
+                android:text="@string/classification"
+                android:textColor="@color/hintColors"
+                android:textSize="@dimen/textsize14" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen7"
+                android:layout_height="@dimen/dimen7"
+                android:layout_marginLeft="@dimen/dimen13"
+                android:src="@mipmap/shop_down_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_allState"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen13"
+            android:paddingRight="@dimen/dimen13">
+
+            <TextView
+                android:id="@+id/tv_allState"
+                style="@style/WrapWrap"
+                android:text="@string/allState"
+                android:textColor="@color/hintColors"
+                android:textSize="@dimen/textsize14" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen7"
+                android:layout_height="@dimen/dimen7"
+                android:layout_marginLeft="@dimen/dimen13"
+                android:src="@mipmap/shop_down_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_inventory"
+            style="@style/AutoMatch"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen13"
+            android:paddingRight="@dimen/dimen13">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:text="@string/inventory"
+                android:textColor="@color/hintColors"
+                android:textSize="@dimen/textsize14" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen7"
+                android:layout_height="@dimen/dimen7"
+                android:layout_marginLeft="@dimen/dimen13"
+                android:src="@mipmap/shop_down_arrow" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_price"
+            style="@style/AutoMatch"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen13"
+            android:paddingRight="@dimen/dimen15">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:text="@string/price"
+                android:textColor="@color/hintColors"
+                android:textSize="@dimen/textsize14" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen7"
+                android:layout_height="@dimen/dimen7"
+                android:layout_marginLeft="@dimen/dimen13"
+                android:src="@mipmap/shop_down_arrow" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/mRefreshLayout"
+        style="@style/MatchAuto"
+        android:background="@color/background">
+
+        <!-- item_companyguidemassage -->
+        <ListView
+            android:id="@+id/lv_myStores"
+            style="@style/MatchMatch"
+            android:divider="@color/background"
+            android:dividerHeight="@dimen/dimen10"
+            android:overScrollMode="never"
+            android:paddingTop="@dimen/dimen10"
+            android:scrollbars="none"
+            tools:listitem="@layout/item_mystores" />
+
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+    <include layout="@layout/common_error" />
+
+    <TextView
+        android:id="@+id/tv_itemAdd"
+        style="@style/Match40"
+        android:layout_marginBottom="@dimen/dimen4"
+        android:layout_marginLeft="@dimen/dimen73"
+        android:layout_marginRight="@dimen/dimen73"
+        android:layout_marginTop="@dimen/dimen4"
+        android:background="@drawable/shape_homepagebtn"
+        android:gravity="center"
+        android:text="@string/itemAdd"
+        android:textColor="@color/whiteColors"
+        android:textSize="@dimen/textsize16" />
+
+</LinearLayout>
