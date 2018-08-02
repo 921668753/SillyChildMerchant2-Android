@@ -10,8 +10,8 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         applicationId "com.yinglan.scm"
-        versionCode 43
-        versionName "1.0.0.1807111526"
+        versionCode 44
+        versionName "1.0.0.1808021642"
         multiDexEnabled true
 
         aaptOptions.cruncherEnabled = false
@@ -181,7 +181,7 @@ dependencies {
     /**
      * 七牛云
      */
-    api 'com.qiniu:qiniu-android-sdk:7.2.3'
+    api 'com.qiniu:qiniu-android-sdk:7.3.12'
 
     /**
      * 腾讯bugly
