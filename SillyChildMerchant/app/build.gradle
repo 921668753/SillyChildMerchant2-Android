@@ -88,8 +88,8 @@ android {
             buildConfigField "String", "WEIXIN_APPSECRET", "\"ffd075c202c8aee81e629efbb9c9156b\""
             buildConfigField "String", "TENGXUNBUGLY_APPID", "\"d108b928c3\""
             buildConfigField "String", "TENGXUNBUGLY_APPKEY", "\"d2c8bb5b-e942-4877-86ba-f93642b8acff\""
-            buildConfigField "String", "QQ_APPID", "\"1106716899\""
-            buildConfigField "String", "QQ_APPKEY", "\"AVj9LjzRPHF37WYj\""
+            buildConfigField "String", "QQ_APPID", "\"1106871195\""
+            buildConfigField "String", "QQ_APPKEY", "\"fjyo2xMLmXIU6NIi\""
             buildConfigField "String", "RONGYUN_APPKEY", "\"pkfcgjstpo5w8\""
             proguardFiles 'proguard-rules.pro'
         }
@@ -108,8 +108,8 @@ android {
             buildConfigField "String", "WEIXIN_APPSECRET", "\"ffd075c202c8aee81e629efbb9c9156b\""
             buildConfigField "String", "TENGXUNBUGLY_APPID", "\"d108b928c3\""
             buildConfigField "String", "TENGXUNBUGLY_APPKEY", "\"d2c8bb5b-e942-4877-86ba-f93642b8acff\""
-            buildConfigField "String", "QQ_APPID", "\"1106716899\""
-            buildConfigField "String", "QQ_APPKEY", "\"AVj9LjzRPHF37WYj\""
+            buildConfigField "String", "QQ_APPID", "\"1106871195\""
+            buildConfigField "String", "QQ_APPKEY", "\"fjyo2xMLmXIU6NIi\""
             buildConfigField "String", "RONGYUN_APPKEY", "\"pkfcgjstpo5w8\""
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             // proguardFiles 'proguard-rules.pro'
