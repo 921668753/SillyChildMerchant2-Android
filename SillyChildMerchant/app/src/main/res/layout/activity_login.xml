@@ -159,8 +159,7 @@
                 android:layout_marginTop="@dimen/dimen35"
                 android:orientation="horizontal"
                 android:paddingLeft="@dimen/dimen38"
-                android:paddingRight="@dimen/dimen38"
-                android:visibility="gone">
+                android:paddingRight="@dimen/dimen38">
 
                 <View
                     style="@style/AutoMatch"
@@ -189,8 +188,7 @@
                 android:layout_below="@id/ll_thirdpartylogin"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="@dimen/dimen34"
-                android:orientation="horizontal"
-                android:visibility="gone">
+                android:orientation="horizontal">
 
 
                 <ImageView
@@ -219,7 +217,6 @@
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:paddingBottom="@dimen/dimen25">
-
 
                 <TextView
                     style="@style/WrapWrap"
