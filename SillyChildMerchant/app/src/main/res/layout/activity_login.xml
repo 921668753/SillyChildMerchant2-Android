@@ -49,8 +49,8 @@
                         android:layout_marginLeft="@dimen/dimen25"
                         android:background="@color/whiteColors"
                         android:digits="@string/number0"
-                        android:inputType="phone"
                         android:hint="@string/hintAccountText"
+                        android:inputType="phone"
                         android:maxLength="11"
                         android:paddingTop="@dimen/dimen10"
                         android:singleLine="true"
@@ -159,7 +159,8 @@
                 android:layout_marginTop="@dimen/dimen35"
                 android:orientation="horizontal"
                 android:paddingLeft="@dimen/dimen38"
-                android:paddingRight="@dimen/dimen38">
+                android:paddingRight="@dimen/dimen38"
+                android:visibility="gone">
 
                 <View
                     style="@style/AutoMatch"
@@ -188,7 +189,8 @@
                 android:layout_below="@id/ll_thirdpartylogin"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="@dimen/dimen34"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
 
                 <ImageView
