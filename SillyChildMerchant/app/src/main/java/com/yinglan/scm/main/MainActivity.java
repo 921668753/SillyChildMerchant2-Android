@@ -50,6 +50,16 @@ public class MainActivity extends BaseActivity implements MainContract.View, Mai
     @BindView(id = R.id.tv_homePage)
     private TextView tv_homePage;
 
+
+    @BindView(id = R.id.bottombar_workbench, click = true)
+    private RelativeLayout bottombar_workbench;
+
+    @BindView(id = R.id.img_workbench)
+    private ImageView img_workbench;
+
+    @BindView(id = R.id.tv_workbench)
+    private TextView tv_workbench;
+
     @BindView(id = R.id.bottombar_message, click = true)
     private RelativeLayout bottombar_message;
 
@@ -86,6 +96,7 @@ public class MainActivity extends BaseActivity implements MainContract.View, Mai
     private BaseFragment contentFragment1;
     private BaseFragment contentFragment2;
     private BaseFragment contentFragment3;
+    private BaseFragment contentFragment4;
     private long firstTime = 0;
 
 
@@ -110,9 +121,10 @@ public class MainActivity extends BaseActivity implements MainContract.View, Mai
         super.initData();
         mPresenter = new MainPresenter(this);
         contentFragment = new HomePageFragment();
-        contentFragment1 = new MessageFragment();
-        contentFragment2 = new OrderFragment();
-        contentFragment3 = new MineFragment();
+        contentFragment1 = new WorkbenchFragment();
+        contentFragment2 = new MessageFragment();
+        contentFragment3 = new OrderFragment();
+        contentFragment4 = new MineFragment();
         chageIcon = getIntent().getIntExtra("chageIcon", 0);
         registerMessageReceiver();  //   极光推送 used for receive msg
         mainReceiver = new MainReceiver(this);
@@ -146,10 +158,13 @@ public class MainActivity extends BaseActivity implements MainContract.View, Mai
         if (newChageIcon == 0) {
             setSimulateClick(bottombar_homePage, 160, 100);
         } else if (newChageIcon == 1) {
-            setSimulateClick(bottombar_message, 160, 100);
+            setSimulateClick(bottombar_workbench, 160, 100);
         } else if (newChageIcon == 2) {
-            setSimulateClick(bottombar_activities, 160, 100);
+            setSimulateClick(bottombar_message, 160, 100);
         } else if (newChageIcon == 3) {
+            setSimulateClick(bottombar_activities, 160, 100);
+        } else if (newChageIcon == 4) {
+            setSimulateClick(bottombar_mine, 160, 100);
         }
     }
 
@@ -180,6 +195,9 @@ public class MainActivity extends BaseActivity implements MainContract.View, Mai
             case R.id.bottombar_homePage:
                 cleanColors(0);
                 break;
+            case R.id.bottombar_workbench:
+                ((MainContract.Presenter) mPresenter).getIsLogin(aty, 2);
+                break;
             case R.id.bottombar_message:
                 ((MainContract.Presenter) mPresenter).getIsLogin(aty, 0);
                 break;
@@ -187,7 +205,7 @@ public class MainActivity extends BaseActivity implements MainContract.View, Mai
                 ((MainContract.Presenter) mPresenter).getIsLogin(aty, 1);
                 break;
             case R.id.bottombar_mine:
-                cleanColors(3);
+                cleanColors(4);
                 break;
             default:
                 break;
@@ -224,14 +242,18 @@ public class MainActivity extends BaseActivity implements MainContract.View, Mai
                     tv_homePage.setTextColor(getResources().getColor(R.color.textColor));
                     break;
                 case 1:
+                    img_workbench.setImageResource(R.mipmap.tab_workbench_unselected);
+                    tv_workbench.setTextColor(getResources().getColor(R.color.textColor));
+                    break;
+                case 2:
                     img_message.setImageResource(R.mipmap.tab_message);
                     tv_message.setTextColor(getResources().getColor(R.color.textColor));
                     break;
-                case 2:
+                case 3:
                     img_activities.setImageResource(R.mipmap.home_order_unselected);
                     tv_activities.setTextColor(getResources().getColor(R.color.textColor));
                     break;
-                case 3:
+                case 4:
                     img_mine.setImageResource(R.mipmap.tab_personal);
                     tv_mine.setTextColor(getResources().getColor(R.color.textColor));
                     break;
@@ -244,19 +266,24 @@ public class MainActivity extends BaseActivity implements MainContract.View, Mai
                     changeFragment(contentFragment);
                     break;
                 case 1:
-                    img_message.setImageResource(R.mipmap.tab_message_selected);
-                    tv_message.setTextColor(getResources().getColor(R.color.greenColors));
+                    img_workbench.setImageResource(R.mipmap.tab_workbench_selected);
+                    tv_workbench.setTextColor(getResources().getColor(R.color.ff9955Colors));
                     changeFragment(contentFragment1);
                     break;
                 case 2:
-                    img_activities.setImageResource(R.mipmap.home_order_selected);
-                    tv_activities.setTextColor(getResources().getColor(R.color.greenColors));
+                    img_message.setImageResource(R.mipmap.tab_message_selected);
+                    tv_message.setTextColor(getResources().getColor(R.color.d0a4fcColors));
                     changeFragment(contentFragment2);
                     break;
                 case 3:
-                    img_mine.setImageResource(R.mipmap.tab_personal_selected);
-                    tv_mine.setTextColor(getResources().getColor(R.color.greenColors));
+                    img_activities.setImageResource(R.mipmap.home_order_selected);
+                    tv_activities.setTextColor(getResources().getColor(R.color.f3516dColors));
                     changeFragment(contentFragment3);
+                    break;
+                case 4:
+                    img_mine.setImageResource(R.mipmap.tab_personal_selected);
+                    tv_mine.setTextColor(getResources().getColor(R.color.e9e5Colors));
+                    changeFragment(contentFragment4);
                     break;
             }
         }
@@ -274,16 +301,21 @@ public class MainActivity extends BaseActivity implements MainContract.View, Mai
                 changeFragment(contentFragment);
                 break;
             case 1:
+                img_workbench.setImageResource(R.mipmap.tab_workbench_selected);
+                tv_workbench.setTextColor(getResources().getColor(R.color.textColor));
+                changeFragment(contentFragment1);
+                break;
+            case 2:
                 img_message.setImageResource(R.mipmap.tab_message_selected);
                 tv_message.setTextColor(getResources().getColor(R.color.greenColors));
                 changeFragment(contentFragment1);
                 break;
-            case 2:
+            case 3:
                 img_activities.setImageResource(R.mipmap.home_order_selected);
                 tv_activities.setTextColor(getResources().getColor(R.color.greenColors));
                 changeFragment(contentFragment2);
                 break;
-            case 3:
+            case 4:
                 img_mine.setImageResource(R.mipmap.tab_personal_selected);
                 tv_mine.setTextColor(getResources().getColor(R.color.greenColors));
                 changeFragment(contentFragment3);
@@ -301,15 +333,17 @@ public class MainActivity extends BaseActivity implements MainContract.View, Mai
     @Override
     public void getSuccess(String success, int flag) {
         if (flag == 0) {
-            cleanColors(1);
-        } else if (flag == 1) {
             cleanColors(2);
+        } else if (flag == 1) {
+            cleanColors(3);
+        } else if (flag == 2) {
+            cleanColors(1);
         }
     }
 
     @Override
     public void errorMsg(String msg, int flag) {
-        if (flag == 0 && isLogin(msg) || flag == 1 && isLogin(msg)) {
+        if (flag == 0 && isLogin(msg) || flag == 1 && isLogin(msg) || flag == 2 && isLogin(msg)) {
             showActivity(aty, LoginActivity.class);
             return;
         }

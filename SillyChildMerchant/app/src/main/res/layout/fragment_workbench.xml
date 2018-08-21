@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Match44"
+        android:background="@color/whiteColors"
+        android:gravity="center"
+        android:text="@string/workbench"
+        android:textColor="@color/titletextcolors"
+        android:textSize="@dimen/textsize17" />
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/mRefreshLayout"
+        style="@style/MatchAuto"
+        android:background="@color/background">
+
+        <ListView
+            android:id="@+id/lv_workbench"
+            style="@style/MatchMatch"
+            android:divider="@color/background"
+            android:dividerHeight="@dimen/dimen1"
+            android:overScrollMode="never"
+            android:paddingTop="@dimen/dimen10"
+            android:scrollbars="none"
+            tools:listitem="@layout/item_workbench" />
+
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+    <include layout="@layout/common_error" />
+
+</LinearLayout>

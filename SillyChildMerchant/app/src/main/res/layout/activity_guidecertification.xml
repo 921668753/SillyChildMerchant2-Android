@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <ScrollView
+        style="@style/MatchMatch"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/MatchMatch"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/Match45"
+                android:layout_marginTop="@dimen/dimen6"
+                android:background="@color/whiteColors"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:text="@string/authenticationInformation1"
+                    android:textColor="@color/tabColors"
+                    android:textSize="@dimen/textsize15" />
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:text="@string/mandatory"
+                    android:textColor="@color/fF4A4AColors"
+                    android:textSize="@dimen/textsize15" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen217"
+                android:layout_marginTop="@dimen/dimen1"
+                android:background="@color/whiteColors"
+                android:paddingBottom="@dimen/dimen5"
+                android:paddingLeft="@dimen/dimen2"
+                android:paddingRight="@dimen/dimen2"
+                android:paddingTop="@dimen/dimen5">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_guidecertification" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen217"
+                android:layout_marginTop="@dimen/dimen1"
+                android:background="@color/whiteColors"
+                android:paddingBottom="@dimen/dimen5"
+                android:paddingLeft="@dimen/dimen2"
+                android:paddingRight="@dimen/dimen2"
+                android:paddingTop="@dimen/dimen5">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_guidecertification" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                style="@style/Match45"
+                android:layout_marginTop="@dimen/dimen1"
+                android:background="@color/whiteColors"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:text="@string/authenticationInformation1"
+                    android:textColor="@color/tabColors"
+                    android:textSize="@dimen/textsize15" />
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="@dimen/dimen5"
+                    android:text="@string/optional"
+                    android:textColor="@color/fF4A4AColors"
+                    android:textSize="@dimen/textsize15" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen217"
+                android:layout_marginTop="@dimen/dimen1"
+                android:background="@color/whiteColors"
+                android:paddingBottom="@dimen/dimen5"
+                android:paddingLeft="@dimen/dimen2"
+                android:paddingRight="@dimen/dimen2"
+                android:paddingTop="@dimen/dimen5">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_guidecertification" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen217"
+                android:layout_marginTop="@dimen/dimen1"
+                android:background="@color/whiteColors"
+                android:paddingBottom="@dimen/dimen5"
+                android:paddingLeft="@dimen/dimen2"
+                android:paddingRight="@dimen/dimen2"
+                android:paddingTop="@dimen/dimen5">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_guidecertification" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/Match50"
+                android:layout_marginTop="@dimen/dimen15"
+                android:background="@color/greenColors"
+                android:gravity="center"
+                android:text="@string/submitAudit"
+                android:textColor="@color/whiteColors"
+                android:textSize="@dimen/textsize18" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

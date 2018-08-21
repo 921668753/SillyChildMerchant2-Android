@@ -99,6 +99,7 @@
 
     <!--主界面-->
     <string name="homePage">首页</string>
+    <string name="workbench">工作台</string>
     <string name="message">消息</string>
     <string name="order">订单</string>
     <string name="mine">我的</string>
@@ -119,11 +120,16 @@
     <string name="shopNum">店铺号：</string>
     <string name="manager">店长</string>
     <string name="recertification">重新认证</string>
+    <string name="departmentGuide">司导</string>
+
 
 
     <!--店主认证-->
     <string name="shopkeeperCertificat">店主认证</string>
     <string name="authenticationInformation">认证信息(必填)</string>
+    <string name="authenticationInformation1">认证信息</string>
+    <string name="mandatory">(必填)</string>
+    <string name="optional">(选填)</string>
     <string name="localIdentityCard">手持当地身份证正面照</string>
     <string name="localIdentityCard1">请上传手持当地身份证正面照</string>
     <string name="enterName">请输入您的姓名</string>
@@ -131,6 +137,19 @@
     <string name="submitAudit1">提交成功,请等待审核</string>
     <string name="uploadStoreIcon">请上传店铺图标</string>
     <string name="enterNameStore1">请输入店铺名称</string>
+
+
+    <!--工作台-->
+    <string name="airportPickup">接机</string>
+    <string name="unread">未读</string>
+    <string name="serviceDate">服务日期：</string>
+    <string name="place"> 地点：</string>
+    <string name="destination">目的地：</string>
+    <string name="expectedWalk">预计路程：</string>
+    <string name="orderAmount">订单金额：</string>
+    <string name="orderReceiving">接单</string>
+
+
 
 
     <!--消息-->
@@ -145,8 +164,21 @@
     <string name="noMessage">亲，您还没有消息哟~</string>
 
 
+    <!--我的   我的车辆-->
+    <string name="delete">删除</string>
+
+
+
+
+
+
+
     <!--我的订单-->
     <string name="myOrder">我的订单</string>
+    <string name="charterOrder">包车订单</string>
+    <string name="goodOrder">商品订单</string>
+    <string name="toEvaluate">待评价</string>
+
     <string name="obligation">待付款</string>
     <string name="sendGoods">待发货</string>
     <string name="waitGoods">待收货</string>

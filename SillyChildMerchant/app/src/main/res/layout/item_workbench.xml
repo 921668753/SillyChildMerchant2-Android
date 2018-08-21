@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen37"
+        android:background="@color/whiteColors"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/AutoWrap"
+            android:paddingLeft="@dimen/dimen17"
+            android:text="@string/airportPickup"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textsize14" />
+
+        <TextView
+            style="@style/WrapWrap"
+            android:paddingRight="@dimen/dimen17"
+            android:text="@string/unread"
+            android:textColor="@color/fF5656Colors"
+            android:textSize="@dimen/textsize11" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen37"
+        android:layout_marginTop="@dimen/dimen1"
+        android:background="@color/whiteColors"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen17"
+        android:paddingRight="@dimen/dimen17">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:text="@string/serviceDate"
+            android:textColor="@color/tabColors"
+            android:textSize="@dimen/textsize13" />
+
+        <TextView
+            style="@style/WrapWrap"
+            android:text="2017-07-01-2017-01-07"
+            android:textColor="@color/hintColors"
+            android:textSize="@dimen/textsize13" />
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_marginLeft="@dimen/dimen33"
+            android:text="周日："
+            android:textColor="@color/tabColors"
+            android:textSize="@dimen/textsize13" />
+
+        <TextView
+            style="@style/WrapWrap"
+            android:text="16:00"
+            android:textColor="@color/hintColors"
+            android:textSize="@dimen/textsize13" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen37"
+        android:layout_marginTop="@dimen/dimen1"
+        android:background="@color/whiteColors"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/dimen17">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_marginLeft="@dimen/dimen17"
+            android:text="@string/place"
+            android:textColor="@color/tabColors"
+            android:textSize="@dimen/textsize13" />
+
+        <TextView
+            style="@style/WrapWrap"
+            android:text="成田国际机场"
+            android:textColor="@color/hintColors"
+            android:textSize="@dimen/textsize13" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen37"
+        android:layout_marginTop="@dimen/dimen1"
+        android:background="@color/whiteColors"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/dimen17">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_marginLeft="@dimen/dimen17"
+            android:text="@string/destination"
+            android:textColor="@color/tabColors"
+            android:textSize="@dimen/textsize13" />
+
+        <TextView
+            style="@style/WrapWrap"
+            android:text="希尔顿酒店"
+            android:textColor="@color/hintColors"
+            android:textSize="@dimen/textsize13" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen37"
+        android:layout_marginTop="@dimen/dimen1"
+        android:background="@color/whiteColors"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/dimen17">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_marginLeft="@dimen/dimen17"
+            android:text="@string/destination"
+            android:textColor="@color/tabColors"
+            android:textSize="@dimen/textsize13" />
+
+        <TextView
+            style="@style/WrapWrap"
+            android:text="希尔顿酒店"
+            android:textColor="@color/hintColors"
+            android:textSize="@dimen/textsize13" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen37"
+        android:layout_marginTop="@dimen/dimen6"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/AutoMatch"
+            android:background="@color/whiteColors"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen17"
+            android:paddingRight="@dimen/dimen17">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:text="@string/expectedWalk"
+                android:textColor="@color/tabColors"
+                android:textSize="@dimen/textsize13" />
+
+            <TextView
+                style="@style/WrapWrap"
+                android:singleLine="true"
+                android:text="50.00KM"
+                android:textColor="@color/hintColors"
+                android:textSize="@dimen/textsize13" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/AutoMatch"
+            android:layout_marginLeft="@dimen/dimen5"
+            android:background="@color/whiteColors"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen17"
+            android:paddingRight="@dimen/dimen17">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:text="@string/orderAmount"
+                android:textColor="@color/tabColors"
+                android:textSize="@dimen/textsize13" />
+
+            <TextView
+                style="@style/WrapWrap"
+                android:singleLine="true"
+                android:text="600.00RMB"
+                android:textColor="@color/hintColors"
+                android:textSize="@dimen/textsize13" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen36"
+        android:layout_marginBottom="@dimen/dimen19"
+        android:layout_marginTop="@dimen/dimen19"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/AutoMatch"
+            android:layout_marginLeft="@dimen/dimen30"
+            android:background="@drawable/shape_refused"
+            android:gravity="center"
+            android:text="@string/refused"
+            android:textColor="@color/whiteColors"
+            android:textSize="@dimen/textsize14" />
+
+
+        <TextView
+            style="@style/AutoMatch"
+            android:layout_marginLeft="@dimen/dimen65"
+            android:layout_marginRight="@dimen/dimen30"
+            android:background="@drawable/shape_orderreceiving"
+            android:gravity="center"
+            android:text="@string/orderReceiving"
+            android:textColor="@color/whiteColors"
+            android:textSize="@dimen/textsize14" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

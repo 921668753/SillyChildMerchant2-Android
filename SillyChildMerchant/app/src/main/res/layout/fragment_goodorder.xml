@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/fragment_goodorder_topbar" />
+
+    <FrameLayout
+        android:id="@+id/order_goodcontent"
+        style="@style/MatchAuto"
+        android:layout_marginTop="@dimen/dimen6" />
+
+</LinearLayout>

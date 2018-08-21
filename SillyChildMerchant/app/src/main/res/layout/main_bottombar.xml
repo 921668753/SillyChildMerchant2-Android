@@ -28,6 +28,29 @@
             android:textSize="@dimen/textSize_10" />
     </LinearLayout>
 
+
+    <LinearLayout
+        android:id="@+id/bottombar_workbench"
+        style="@style/AutoMatch"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen5">
+
+        <ImageView
+            android:id="@+id/img_workbench"
+            style="@style/Image20"
+            android:src="@mipmap/tab_workbench_unselected" />
+
+        <TextView
+            android:id="@+id/tv_workbench"
+            style="@style/WrapWrap"
+            android:layout_marginTop="@dimen/dimen1"
+            android:text="@string/workbench"
+            android:textColor="@color/tabColors"
+            android:textSize="@dimen/textSize_10" />
+    </LinearLayout>
+
+
     <RelativeLayout
         android:id="@+id/bottombar_message"
         style="@style/AutoMatch">

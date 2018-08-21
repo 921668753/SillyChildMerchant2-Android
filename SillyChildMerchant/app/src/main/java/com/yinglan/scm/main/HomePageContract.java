@@ -16,10 +16,10 @@ public interface HomePageContract {
 //         */
 //        void postHomePage(String store_logo, String store_name, String id_img);
 
-        /**
-         * 上传图片
-         */
-        void upPictures(String paramname);
+//        /**
+//         * 上传图片
+//         */
+//        void upPictures(String paramname);
 
         /**
          * 获取首页信息

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Match45"
+    android:background="@color/whiteColors"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_obligation"
+        style="@style/AutoMatch"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_obligation"
+            style="@style/MatchAuto"
+            android:gravity="center"
+            android:text="@string/obligation"
+            android:textColor="@color/tabColors"
+            android:textSize="@dimen/textsize13" />
+
+        <TextView
+            android:id="@+id/tv_obligation1"
+            android:layout_width="@dimen/dimen25"
+            android:layout_height="@dimen/dimen2"
+            android:background="@color/whiteColors" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sendGoods"
+        style="@style/AutoMatch"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sendGoods"
+            style="@style/MatchAuto"
+            android:gravity="center"
+            android:text="@string/sendGoods"
+            android:textColor="@color/tabColors"
+            android:textSize="@dimen/textsize13" />
+
+        <TextView
+            android:id="@+id/tv_sendGoods1"
+            android:layout_width="@dimen/dimen25"
+            android:layout_height="@dimen/dimen2"
+            android:background="@color/whiteColors" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_waitGoods"
+        style="@style/AutoMatch"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_waitGoods"
+            style="@style/MatchAuto"
+            android:gravity="center"
+            android:text="@string/waitGoods"
+            android:textColor="@color/tabColors"
+            android:textSize="@dimen/textsize13" />
+
+        <TextView
+            android:id="@+id/tv_waitGoods1"
+            android:layout_width="@dimen/dimen25"
+            android:layout_height="@dimen/dimen2"
+            android:background="@color/whiteColors" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_completed"
+        style="@style/AutoMatch"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_completed"
+            style="@style/MatchAuto"
+            android:gravity="center"
+            android:text="@string/completed"
+            android:textColor="@color/tabColors"
+            android:textSize="@dimen/textsize13" />
+
+        <TextView
+            android:id="@+id/tv_completed1"
+            android:layout_width="@dimen/dimen25"
+            android:layout_height="@dimen/dimen2"
+            android:background="@color/whiteColors" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_afterSale"
+        style="@style/AutoMatch"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_afterSale"
+            style="@style/MatchAuto"
+            android:gravity="center"
+            android:text="@string/afterSale"
+            android:textColor="@color/tabColors"
+            android:textSize="@dimen/textsize13" />
+
+        <TextView
+            android:id="@+id/tv_afterSale1"
+            android:layout_width="@dimen/dimen25"
+            android:layout_height="@dimen/dimen2"
+            android:background="@color/whiteColors" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_all"
+        style="@style/AutoMatch"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_all"
+            style="@style/MatchAuto"
+            android:gravity="center"
+            android:text="@string/all"
+            android:textColor="@color/greenColors"
+            android:textSize="@dimen/textsize13" />
+
+        <TextView
+            android:id="@+id/tv_all1"
+            android:layout_width="@dimen/dimen25"
+            android:layout_height="@dimen/dimen2"
+            android:background="@color/greenColors" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

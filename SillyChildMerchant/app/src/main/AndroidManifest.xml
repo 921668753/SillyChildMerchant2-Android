@@ -119,12 +119,12 @@
 
         <!--首页  重新认证-->
         <activity
-            android:name=".homepage.RecertificationActivity"
+            android:name=".homepage.storecertification.StoreCertificationActivity"
             android:screenOrientation="portrait" />
 
         <!--首页  店主认证-->
         <activity
-            android:name=".homepage.ShopkeeperCertificationActivity"
+            android:name=".homepage.storecertification.ShopkeeperCertificationActivity"
             android:screenOrientation="portrait" />
 
         <!--消息  系统消息列表-->
@@ -139,22 +139,22 @@
 
         <!--订单  订单详情-->
         <activity
-            android:name=".order.orderdetails.OrderDetailsActivity"
+            android:name=".order.goodorder.orderdetails.OrderDetailsActivity"
             android:screenOrientation="portrait" />
 
         <!--订单  订单详情  订单跟踪-->
         <activity
-            android:name=".order.ordertracking.OrderTrackingActivity"
+            android:name=".order.goodorder.ordertracking.OrderTrackingActivity"
             android:screenOrientation="portrait" />
 
         <!--订单  售后详情-->
         <activity
-            android:name=".order.aftersalesdetails.AfterSalesDetailsActivity"
+            android:name=".order.goodorder.aftersalesdetails.AfterSalesDetailsActivity"
             android:screenOrientation="portrait" />
 
         <!--订单  订单评价-->
         <activity
-            android:name=".order.orderevaluation.SeeEvaluationActivity"
+            android:name=".order.goodorder.orderevaluation.SeeEvaluationActivity"
             android:screenOrientation="portrait" />
 
         <!--我的  个人资料-->

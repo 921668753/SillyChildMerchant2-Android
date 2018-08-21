@@ -12,8 +12,8 @@ import com.kymjs.common.Log;
 import com.kymjs.common.StringUtils;
 import com.yinglan.scm.R;
 import com.yinglan.scm.entity.order.GoodOrderBean.DataBean.ResultBean;
-import com.yinglan.scm.order.aftersalesdetails.AfterSalesDetailsActivity;
-import com.yinglan.scm.order.orderdetails.OrderDetailsActivity;
+import com.yinglan.scm.order.goodorder.aftersalesdetails.AfterSalesDetailsActivity;
+import com.yinglan.scm.order.goodorder.orderdetails.OrderDetailsActivity;
 
 import cn.bingoogolapple.baseadapter.BGAAdapterViewAdapter;
 import cn.bingoogolapple.baseadapter.BGAViewHolderHelper;

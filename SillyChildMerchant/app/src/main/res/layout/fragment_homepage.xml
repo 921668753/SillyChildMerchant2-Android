@@ -14,144 +14,299 @@
         android:textSize="@dimen/textsize17" />
 
 
-    <LinearLayout
-        style="@style/MatchWrap"
-        android:layout_marginLeft="@dimen/dimen8"
-        android:layout_marginRight="@dimen/dimen8"
-        android:layout_marginTop="@dimen/dimen10"
-        android:background="@drawable/shape_homepage"
+    <TextView
+        style="@style/Match45"
+        android:layout_marginTop="@dimen/dimen6"
+        android:background="@color/whiteColors"
         android:gravity="center"
-        android:orientation="vertical">
+        android:text="@string/myIdentity"
+        android:textColor="@color/greenColors"
+        android:textSize="@dimen/textsize17"
+        android:textStyle="bold" />
 
-        <TextView
-            style="@style/MatchWrap"
-            android:gravity="center"
-            android:padding="@dimen/dimen15"
-            android:text="@string/myIdentity"
-            android:textColor="@color/titletextcolors"
-            android:textSize="@dimen/textsize15" />
-
-        <TextView style="@style/DividerWidth" />
-
-        <ImageView
-            android:id="@+id/img_storeLogo"
-            android:layout_width="@dimen/dimen93"
-            android:layout_height="@dimen/dimen93"
-            android:layout_marginBottom="@dimen/dimen20"
-            android:layout_marginTop="@dimen/dimen20"
-            android:src="@mipmap/home_add_shop_logo"
-            android:visibility="visible" />
-
+    <ScrollView
+        style="@style/MatchMatch"
+        android:scrollbars="none">
 
         <LinearLayout
-            android:id="@+id/ll_seller"
-            style="@style/MatchWrap"
-            android:orientation="horizontal"
-            android:visibility="visible">
+            style="@style/MatchMatch"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/img_storeLogo1"
-                android:layout_width="@dimen/dimen95"
-                android:layout_height="@dimen/dimen95"
-                android:layout_marginBottom="@dimen/dimen30"
-                android:layout_marginLeft="@dimen/dimen15"
-                android:layout_marginTop="@dimen/dimen30"
-                android:src="@mipmap/avatar" />
+                android:id="@+id/img_departmentGuide"
+                android:layout_width="@dimen/dimen93"
+                android:layout_height="@dimen/dimen93"
+                android:layout_marginTop="@dimen/dimen40"
+                android:src="@mipmap/become_department_guide"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ll_guide"
+                style="@style/MatchWrap"
+                android:layout_marginTop="@dimen/dimen6"
+                android:background="@color/whiteColors"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_guideLogo"
+                    android:layout_width="@dimen/dimen50"
+                    android:layout_height="@dimen/dimen50"
+                    android:layout_marginBottom="@dimen/dimen20"
+                    android:layout_marginLeft="@dimen/dimen17"
+                    android:layout_marginTop="@dimen/dimen20"
+                    android:src="@mipmap/avatar" />
+
+
+                <LinearLayout
+                    style="@style/AutoWrap"
+                    android:layout_marginLeft="@dimen/dimen9"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_guideName"
+                        style="@style/WrapWrap"
+                        android:text="柳倾城"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textsize14" />
+
+                    <TextView
+                        android:id="@+id/tv_guideType"
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="@dimen/dimen5"
+                        android:text="@string/departmentGuide"
+                        android:textColor="@color/tabColors"
+                        android:textSize="@dimen/textsize12" />
+
+                    <TextView
+                        android:id="@+id/tv_guideNum"
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="@dimen/dimen5"
+                        android:text="工号：A001"
+                        android:textColor="@color/tabColors"
+                        android:textSize="@dimen/textsize12" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/img_guideCertified"
+                    android:layout_width="@dimen/dimen36"
+                    android:layout_height="@dimen/dimen52"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dimen15"
+                    android:src="@mipmap/home_certified" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_asmanager"
+                android:layout_width="@dimen/dimen93"
+                android:layout_height="@dimen/dimen93"
+                android:layout_marginTop="@dimen/dimen26"
+                android:src="@mipmap/img_asmanager"
+                android:visibility="visible" />
 
 
             <LinearLayout
-                style="@style/AutoMatch"
-                android:layout_marginLeft="@dimen/dimen20"
+                android:id="@+id/ll_store"
+                style="@style/MatchWrap"
+                android:layout_marginTop="@dimen/dimen1"
+                android:background="@color/whiteColors"
                 android:gravity="center_vertical"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/tv_storeName"
-                    style="@style/WrapWrap"
-                    android:text="小仙女集结地"
-                    android:textColor="@color/titletextcolors"
-                    android:textSize="@dimen/textsize14" />
 
-                <TextView
-                    android:id="@+id/tv_type"
-                    style="@style/WrapWrap"
-                    android:layout_marginTop="@dimen/dimen18"
-                    android:text="@string/manager"
-                    android:textColor="@color/titletextcolors"
-                    android:textSize="@dimen/textsize14" />
+                <ImageView
+                    android:id="@+id/img_storeLogo"
+                    android:layout_width="@dimen/dimen50"
+                    android:layout_height="@dimen/dimen50"
+                    android:layout_marginBottom="@dimen/dimen20"
+                    android:layout_marginLeft="@dimen/dimen17"
+                    android:layout_marginTop="@dimen/dimen20"
+                    android:src="@mipmap/avatar" />
 
-                <TextView
-                    android:id="@+id/tv_shopNum"
-                    style="@style/WrapWrap"
-                    android:layout_marginTop="@dimen/dimen18"
-                    android:text="店铺号：520"
-                    android:textColor="@color/titletextcolors"
-                    android:textSize="@dimen/textsize14" />
+
+                <LinearLayout
+                    style="@style/AutoWrap"
+                    android:layout_marginLeft="@dimen/dimen9"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_storeName"
+                        style="@style/WrapWrap"
+                        android:text="小仙女集结地"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textsize14" />
+
+                    <TextView
+                        android:id="@+id/tv_storeType"
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="@dimen/dimen5"
+                        android:text="@string/manager"
+                        android:textColor="@color/tabColors"
+                        android:textSize="@dimen/textsize12" />
+
+                    <TextView
+                        android:id="@+id/tv_shopNum"
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="@dimen/dimen5"
+                        android:text="店铺号：520"
+                        android:textColor="@color/tabColors"
+                        android:textSize="@dimen/textsize12" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/img_shopCertified"
+                    android:layout_width="@dimen/dimen36"
+                    android:layout_height="@dimen/dimen52"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dimen15"
+                    android:src="@mipmap/home_certified" />
 
 
             </LinearLayout>
 
 
             <!--<LinearLayout-->
-            <!--style="@style/WrapMatch"-->
-            <!--android:layout_marginLeft="@dimen/dimen15"-->
-            <!--android:layout_marginRight="@dimen/dimen15"-->
+            <!--style="@style/MatchWrap"-->
+            <!--android:layout_marginLeft="@dimen/dimen8"-->
+            <!--android:layout_marginRight="@dimen/dimen8"-->
+            <!--android:layout_marginTop="@dimen/dimen10"-->
+            <!--android:background="@drawable/shape_homepage"-->
             <!--android:gravity="center"-->
             <!--android:orientation="vertical">-->
 
-            <ImageView
-                android:id="@+id/img_certified"
-                android:layout_width="@dimen/dimen36"
-                android:layout_height="@dimen/dimen52"
-                android:layout_gravity="center_vertical"
-                android:layout_marginRight="@dimen/dimen15"
-                android:src="@mipmap/home_certified" />
 
-            <!--<TextView-->
-            <!--android:id="@+id/tv_certified"-->
-            <!--style="@style/WrapWrap"-->
-            <!--android:layout_marginTop="@dimen/dimen15"-->
-            <!--android:text="@string/certified"-->
-            <!--android:textColor="@color/greenColors"-->
-            <!--android:textSize="@dimen/textsize12" />-->
+            <!--<ImageView-->
+            <!--android:id="@+id/img_storeLogo"-->
+            <!--android:layout_width="@dimen/dimen93"-->
+            <!--android:layout_height="@dimen/dimen93"-->
+            <!--android:layout_marginBottom="@dimen/dimen20"-->
+            <!--android:layout_marginTop="@dimen/dimen20"-->
+            <!--android:src="@mipmap/home_add_shop_logo"-->
+            <!--android:visibility="visible" />-->
+
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/ll_seller"-->
+            <!--style="@style/MatchWrap"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:visibility="visible">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/img_storeLogo1"-->
+            <!--android:layout_width="@dimen/dimen95"-->
+            <!--android:layout_height="@dimen/dimen95"-->
+            <!--android:layout_marginBottom="@dimen/dimen30"-->
+            <!--android:layout_marginLeft="@dimen/dimen15"-->
+            <!--android:layout_marginTop="@dimen/dimen30"-->
+            <!--android:src="@mipmap/avatar" />-->
+
+
+            <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;style="@style/AutoMatch"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginLeft="@dimen/dimen20"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center_vertical"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/tv_storeName"&ndash;&gt;-->
+            <!--&lt;!&ndash;style="@style/WrapWrap"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="小仙女集结地"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/titletextcolors"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="@dimen/textsize14" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/tv_type"&ndash;&gt;-->
+            <!--&lt;!&ndash;style="@style/WrapWrap"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="@dimen/dimen18"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="@string/manager"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/titletextcolors"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="@dimen/textsize14" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/tv_shopNum"&ndash;&gt;-->
+            <!--&lt;!&ndash;style="@style/WrapWrap"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="@dimen/dimen18"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="店铺号：520"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/titletextcolors"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="@dimen/textsize14" />&ndash;&gt;-->
+
+
+            <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+
+            <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;style="@style/WrapMatch"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginLeft="@dimen/dimen15"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginRight="@dimen/dimen15"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/img_certified"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="@dimen/dimen36"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="@dimen/dimen52"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_gravity="center_vertical"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginRight="@dimen/dimen15"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@mipmap/home_certified" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/tv_certified"&ndash;&gt;-->
+            <!--&lt;!&ndash;style="@style/WrapWrap"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="@dimen/dimen15"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="@string/certified"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/greenColors"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="@dimen/textsize12" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
 
             <!--</LinearLayout>-->
 
 
+            <!--</LinearLayout>-->
+
+
+            <!--<EditText-->
+            <!--android:id="@+id/et_enterNameStore"-->
+            <!--style="@style/Match44"-->
+            <!--android:layout_marginLeft="@dimen/dimen8"-->
+            <!--android:layout_marginRight="@dimen/dimen8"-->
+            <!--android:layout_marginTop="@dimen/dimen10"-->
+            <!--android:background="@drawable/shape_homepage"-->
+            <!--android:hint="@string/enterNameStore"-->
+            <!--android:maxLength="12"-->
+            <!--android:paddingLeft="@dimen/dimen11"-->
+            <!--android:paddingRight="@dimen/dimen11"-->
+            <!--android:textColor="@color/titletextcolors"-->
+            <!--android:textColorHint="@color/hintColors"-->
+            <!--android:textCursorDrawable="@drawable/shape_cursor"-->
+            <!--android:textSize="@dimen/textsize14" />-->
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_asManager"-->
+            <!--style="@style/Match40"-->
+            <!--android:layout_marginLeft="@dimen/dimen73"-->
+            <!--android:layout_marginRight="@dimen/dimen73"-->
+            <!--android:layout_marginTop="@dimen/dimen15"-->
+            <!--android:background="@drawable/shape_homepagebtn"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/asManager"-->
+            <!--android:textColor="@color/whiteColors"-->
+            <!--android:textSize="@dimen/textsize16" />-->
+
+
         </LinearLayout>
 
-
-    </LinearLayout>
-
-
-    <EditText
-        android:id="@+id/et_enterNameStore"
-        style="@style/Match44"
-        android:layout_marginLeft="@dimen/dimen8"
-        android:layout_marginRight="@dimen/dimen8"
-        android:layout_marginTop="@dimen/dimen10"
-        android:background="@drawable/shape_homepage"
-        android:hint="@string/enterNameStore"
-        android:maxLength="12"
-        android:paddingLeft="@dimen/dimen11"
-        android:paddingRight="@dimen/dimen11"
-        android:textColor="@color/titletextcolors"
-        android:textColorHint="@color/hintColors"
-        android:textCursorDrawable="@drawable/shape_cursor"
-        android:textSize="@dimen/textsize14" />
-
-
-    <TextView
-        android:id="@+id/tv_asManager"
-        style="@style/Match40"
-        android:layout_marginLeft="@dimen/dimen73"
-        android:layout_marginRight="@dimen/dimen73"
-        android:layout_marginTop="@dimen/dimen15"
-        android:background="@drawable/shape_homepagebtn"
-        android:gravity="center"
-        android:text="@string/asManager"
-        android:textColor="@color/whiteColors"
-        android:textSize="@dimen/textsize16" />
-
+    </ScrollView>
 
 </LinearLayout>
