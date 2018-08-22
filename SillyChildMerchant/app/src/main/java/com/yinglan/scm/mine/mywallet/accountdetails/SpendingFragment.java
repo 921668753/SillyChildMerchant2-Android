@@ -1,16 +1,18 @@
 package com.yinglan.scm.mine.mywallet.accountdetails;
 
+import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.common.cklibrary.common.BaseActivity;
+import com.common.cklibrary.common.BaseFragment;
 import com.common.cklibrary.common.BindView;
 import com.common.cklibrary.common.ViewInject;
-import com.common.cklibrary.utils.ActivityTitleUtils;
 import com.common.cklibrary.utils.JsonUtil;
 import com.common.cklibrary.utils.RefreshLayoutUtil;
 import com.yinglan.scm.R;
@@ -22,15 +24,14 @@ import com.yinglan.scm.loginregister.LoginActivity;
 import cn.bingoogolapple.refreshlayout.BGARefreshLayout;
 
 /**
- * 个人中心中的账户明细
- * Created by Administrator on 2017/9/2.
+ * 支出
  */
+public class SpendingFragment extends BaseFragment implements AdapterView.OnItemClickListener, AccountDetailsContract.View, BGARefreshLayout.BGARefreshLayoutDelegate {
 
-public class AccountDetailsActivity extends BaseActivity implements AdapterView.OnItemClickListener, AccountDetailsContract.View, BGARefreshLayout.BGARefreshLayoutDelegate {
+    private AccountDetailsActivity aty;
 
     @BindView(id = R.id.mRefreshLayout)
     private BGARefreshLayout mRefreshLayout;
-
 
     @BindView(id = R.id.lv_detail)
     private ListView lv_detail;
@@ -66,33 +67,27 @@ public class AccountDetailsActivity extends BaseActivity implements AdapterView.
 
 
     @Override
-    public void setRootView() {
-        setContentView(R.layout.fragment_accountdetails);
+    protected View inflaterView(LayoutInflater inflater, ViewGroup container, Bundle bundle) {
+        aty = (AccountDetailsActivity) getActivity();
+        return View.inflate(aty, R.layout.fragment_accountdetails, null);
     }
 
     @Override
-    public void initData() {
+    protected void initData() {
         super.initData();
         mPresenter = new AccountDetailsPresenter(this);
-        mAdapter = new AccountDetailsAdapter(this);
+        mAdapter = new AccountDetailsAdapter(aty);
     }
 
     @Override
-    public void initWidget() {
-        super.initWidget();
-        initTitle();
+    protected void initWidget(View parentView) {
+        super.initWidget(parentView);
         RefreshLayoutUtil.initRefreshLayout(mRefreshLayout, this, aty, true);
         lv_detail.setAdapter(mAdapter);
         lv_detail.setOnItemClickListener(this);
         mRefreshLayout.beginRefreshing();
     }
 
-    /**
-     * 设置标题
-     */
-    public void initTitle() {
-        ActivityTitleUtils.initToolbar(aty, getString(R.string.accountDetails), true, R.id.titlebar);
-    }
 
     @Override
     public void widgetClick(View v) {
@@ -103,7 +98,7 @@ public class AccountDetailsActivity extends BaseActivity implements AdapterView.
                     mRefreshLayout.beginRefreshing();
                     return;
                 }
-                showActivity(aty, LoginActivity.class);
+                aty.showActivity(aty, LoginActivity.class);
                 break;
         }
     }
@@ -173,7 +168,7 @@ public class AccountDetailsActivity extends BaseActivity implements AdapterView.
             tv_hintText.setVisibility(View.GONE);
             tv_button.setText(getString(R.string.login));
             // ViewInject.toast(getString(R.string.reloginPrompting));
-            showActivity(aty, LoginActivity.class);
+            aty.showActivity(aty, LoginActivity.class);
             return;
         } else if (msg.contains(getString(R.string.checkNetwork))) {
             img_err.setImageResource(R.mipmap.no_network);

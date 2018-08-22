@@ -75,6 +75,11 @@
         <item name="android:layout_height">@dimen/dimen40</item>
     </style>
 
+    <style name="Match42">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen42</item>
+    </style>
+
     <style name="Match44">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/dimen44</item>

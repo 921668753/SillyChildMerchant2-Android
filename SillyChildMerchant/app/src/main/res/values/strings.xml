@@ -123,7 +123,6 @@
     <string name="departmentGuide">司导</string>
 
 
-
     <!--店主认证-->
     <string name="shopkeeperCertificat">店主认证</string>
     <string name="authenticationInformation">认证信息(必填)</string>
@@ -150,8 +149,6 @@
     <string name="orderReceiving">接单</string>
 
 
-
-
     <!--消息-->
     <string name="interactiveMessage">互动消息</string>
     <string name="systemMessage">系统消息</string>
@@ -166,7 +163,19 @@
 
     <!--我的   我的车辆-->
     <string name="delete">删除</string>
+    <string name="myVehicle">我的车辆</string>
 
+    <!--我的   我的车辆    新增车辆-->
+    <string name="addVehicle">新增车辆</string>
+    <string name="carCompany">车检证</string>
+    <string name="vehicleImages">车辆图片</string>
+    <string name="model">车型</string>
+    <string name="seating">座位数</string>
+    <string name="vehicleYear">车辆年份</string>
+    <string name="vehiclePassengerInsurance">车辆是否有乘客保险</string>
+
+    <!--我的   我的车辆    车辆详情-->
+    <string name="vehicleDetails">车辆详情</string>
 
 
 

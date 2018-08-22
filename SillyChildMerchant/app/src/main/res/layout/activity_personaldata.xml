@@ -3,26 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/MatchMatch"
+    android:background="@color/background"
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
     <include layout="@layout/common_title" />
 
-    <TextView style="@style/DividerWidth" />
 
     <ScrollView
         style="@style/MatchMatch"
         android:scrollbars="none">
 
-        <LinearLayout
-            style="@style/MatchMatch"
-            android:orientation="vertical">
-
+        <RelativeLayout style="@style/MatchMatch">
 
             <LinearLayout
                 android:id="@+id/ll_headPortrait"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/dimen70"
+                android:layout_height="@dimen/dimen73"
+                android:layout_marginTop="@dimen/dimen6"
                 android:background="@color/whiteColors"
                 android:gravity="center_vertical"
                 android:paddingLeft="@dimen/dimen15"
@@ -54,11 +52,12 @@
 
             </LinearLayout>
 
-            <include layout="@layout/common_dividerwidth1" />
 
             <LinearLayout
                 android:id="@+id/ll_nickname"
-                style="@style/Match50"
+                style="@style/Match45"
+                android:layout_below="@id/ll_headPortrait"
+                android:layout_marginTop="@dimen/dimen1"
                 android:background="@color/whiteColors"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
@@ -86,12 +85,11 @@
                     android:src="@mipmap/right_arrow" />
             </LinearLayout>
 
-            <include layout="@layout/common_dividerwidth1" />
-
 
             <LinearLayout
                 android:id="@+id/ll_gender"
-                style="@style/Match50"
+                style="@style/Match45"
+                android:layout_below="@id/ll_nickname"
                 android:background="@color/whiteColors"
                 android:gravity="center_vertical"
                 android:paddingLeft="@dimen/dimen15"
@@ -118,11 +116,12 @@
                     android:src="@mipmap/right_arrow" />
             </LinearLayout>
 
-            <include layout="@layout/common_dividerwidth1" />
 
             <LinearLayout
                 android:id="@+id/ll_selfIntroduction"
-                style="@style/Match50"
+                style="@style/Match45"
+                android:layout_below="@id/ll_gender"
+                android:layout_marginTop="@dimen/dimen1"
                 android:background="@color/whiteColors"
                 android:gravity="center_vertical"
                 android:paddingLeft="@dimen/dimen15"
@@ -151,35 +150,36 @@
 
 
             <TextView
+                android:id="@+id/tv_myPhotoAlbum"
                 style="@style/MatchWrap"
-                android:layout_marginTop="@dimen/dimen10"
+                android:layout_below="@id/ll_selfIntroduction"
+                android:layout_marginTop="@dimen/dimen6"
                 android:background="@color/whiteColors"
                 android:paddingLeft="@dimen/dimen17"
                 android:paddingTop="@dimen/dimen18"
                 android:text="@string/myPhotoAlbum"
                 android:textColor="@color/textColor"
-                android:textSize="@dimen/textsize14"
-                android:visibility="gone" />
+                android:textSize="@dimen/textsize14" />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recyclerView"
                 style="@style/MatchWrap"
-                android:layout_marginBottom="@dimen/dimen5"
-                android:layout_marginTop="@dimen/dimen10"
+                android:layout_below="@id/tv_myPhotoAlbum"
                 android:background="@color/whiteColors"
                 android:choiceMode="singleChoice"
                 android:divider="@null"
                 android:fadingEdge="none"
                 android:listSelector="@android:color/transparent"
+                android:paddingBottom="@dimen/dimen10"
                 android:paddingLeft="@dimen/dimen15"
                 android:paddingRight="@dimen/dimen25"
+                android:paddingTop="@dimen/dimen10"
                 android:scrollbarStyle="outsideOverlay"
-                android:visibility="gone"
                 app:layoutManager="android.support.v7.widget.GridLayoutManager"
                 app:spanCount="3"
-                tools:listitem="@layout/item_chooseimage1" />
+                tools:listitem="@layout/item_chooseimage" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
     </ScrollView>
 

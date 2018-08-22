@@ -210,7 +210,7 @@ public class PersonalDataActivity extends BaseActivity implements PersonalDataCo
             Intent intent = new Intent(PersonalDataActivity.this, ImageGridActivity.class);
             /* 如果需要进入选择的时候显示已经选中的图片，
              * 详情请查看ImagePickerActivity
-             * */
+             */
             // intent1.putExtra(ImageGridActivity.EXTRAS_IMAGES, images);
             startActivityForResult(intent, REQUEST_CODE_SELECT);
         } else if (EasyPermissions.hasPermissions(this, perms) && code == RESULT_CODE_PRODUCT) {
