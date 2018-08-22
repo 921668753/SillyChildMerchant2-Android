@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen132"
+    android:background="@color/whiteColors"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        style="@style/WrapWrap"
+        android:layout_marginLeft="@dimen/dimen17"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dimen45"
+            android:layout_height="@dimen/dimen45"
+            android:layout_marginTop="@dimen/dimen20"
+            android:src="@mipmap/avatar" />
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_marginTop="@dimen/dimen8"
+            android:maxLines="4"
+            android:maxWidth="@dimen/dimen45"
+            android:text="易知难"
+            android:textColor="@color/greenColors"
+            android:textSize="@dimen/textsize10" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/AutoWrap"
+        android:layout_marginBottom="@dimen/dimen10"
+        android:layout_marginLeft="@dimen/dimen9"
+        android:layout_marginTop="@dimen/dimen24"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/MatchWrap"
+            android:text="成田国际机场服务"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textsize14" />
+
+        <TextView
+            style="@style/MatchWrap"
+            android:layout_marginTop="@dimen/dimen5"
+            android:text="服务已完成5天"
+            android:textColor="@color/hintColors"
+            android:textSize="@dimen/textsize10" />
+
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:layout_marginTop="@dimen/dimen5"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/WrapWrap"
+                android:text="@string/orderPrice"
+                android:textColor="@color/tabColors"
+                android:textSize="@dimen/textsize12" />
+
+
+            <TextView
+                style="@style/AutoWrap"
+                android:text="600.00RMB"
+                android:textColor="@color/hintColors"
+                android:textSize="@dimen/textsize12" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:layout_marginTop="@dimen/dimen5"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/WrapWrap"
+                android:text="@string/numberService"
+                android:textColor="@color/tabColors"
+                android:textSize="@dimen/textsize12" />
+
+
+            <TextView
+                style="@style/AutoWrap"
+                android:text="1成人"
+                android:textColor="@color/hintColors"
+                android:textSize="@dimen/textsize12" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:layout_marginTop="@dimen/dimen5"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/WrapWrap"
+                android:text="@string/serviceDate"
+                android:textColor="@color/tabColors"
+                android:textSize="@dimen/textsize12" />
+
+
+            <TextView
+                style="@style/AutoWrap"
+                android:text="2017-07-07"
+                android:textColor="@color/hintColors"
+                android:textSize="@dimen/textsize12" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen71"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dimen8"
+        android:layout_marginRight="@dimen/dimen17"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen21"
+            android:background="@drawable/shape_toevaluate"
+            android:gravity="center"
+            android:text="@string/toEvaluate"
+            android:textColor="@color/fF3C3CColors"
+            android:textSize="@dimen/textsize12" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen21"
+            android:layout_marginTop="@dimen/dimen46"
+            android:background="@drawable/shape_toevaluate1"
+            android:gravity="center"
+            android:text="@string/toEvaluate1"
+            android:textColor="@color/greenColors"
+            android:textSize="@dimen/textsize12" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

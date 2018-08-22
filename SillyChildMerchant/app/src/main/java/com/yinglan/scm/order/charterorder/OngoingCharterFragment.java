@@ -79,7 +79,7 @@ public class OngoingCharterFragment extends BaseFragment implements AdapterView.
     @Override
     protected View inflaterView(LayoutInflater inflater, ViewGroup container, Bundle bundle) {
         aty = (MainActivity) getActivity();
-        return View.inflate(aty, R.layout.fragment_allgood, null);
+        return View.inflate(aty, R.layout.fragment_allcharter, null);
     }
 
     @Override

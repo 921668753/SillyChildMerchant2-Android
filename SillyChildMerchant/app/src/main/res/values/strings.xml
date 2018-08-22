@@ -187,7 +187,7 @@
     <string name="charterOrder">包车订单</string>
     <string name="goodOrder">商品订单</string>
     <string name="toEvaluate">待评价</string>
-
+    <string name="toEvaluate1">去评价</string>
     <string name="obligation">待付款</string>
     <string name="sendGoods">待发货</string>
     <string name="waitGoods">待收货</string>
@@ -212,6 +212,12 @@
     <string name="actualPaymentInCart">实付款：</string>
     <string name="retry">重试</string>
     <string name="noOrder">亲，您还没有订单哟~</string>
+
+    <string name="orderPrice">订单价格：</string>
+    <string name="numberService">服务人数：</string>
+
+
+
 
     <!-- 订单   订单详情-->
     <string name="waitingPayment">等待买家付款</string>
